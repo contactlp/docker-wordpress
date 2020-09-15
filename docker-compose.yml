@@ -41,6 +41,7 @@ services:
       - ${SITE_FILES}:/var/www/html
     depends_on:
       - new-site-db
+      - new-site-wordpress
     entrypoint: wp
 
 networks:
